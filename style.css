@@ -1,0 +1,52 @@
+body{
+    background-color:#f0f0f0;
+}
+h1 {
+    background-color: #000000;
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+    font-family: cursive;
+
+}
+p{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: darkgreen;
+}
+ol li{
+    font-size: 25px;
+    color: blueviolet;
+    font-family: fantasy;
+}
+ul li{
+    max-width: 30%;
+    background-color: yellow;
+    font-size: 25px;
+    color: forestgreen;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contenedor {
+    display: flexbox;
+}
+.imagenes img{
+    max-width: 25%;
+    max-height: 25%;     
+}
+
+.enviar{    
+    margin: 7px;
+    background-color: blueviolet;
+    border-radius: 25px;
+    color: #f0f0f0;
+    font-size: 20px;
+}
+.etiqueta{
+    border-radius: 5px;
+
+    background-color: aqua;
+    font-size: 20px;
+}
