@@ -1,3 +1,3 @@
 # inf122
-Nombre: Calvin Condori
+Nombre: Calvin Williams Condori Cocarito
 Materia: INF-122
