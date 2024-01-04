@@ -1,6 +1,30 @@
 body{
-    background-color:#f0f0f0;
+    background-color: #d8c1a4;
 }
+h1{
+    text-align: center;
+    color: #bc6cd9;
+}
+h2{
+    color: #2b9bc7;
+}
+.formulario{
+    margin: 10px;
+}
+.formulario .botones{
+    font-size: 15px;
+    margin: 8px;
+    border-radius: 25px;
+    border-color: rgb(101, 168, 168);
+    color: #000000;
+    background-color: #d47e14;
+}
+.etiqueta{
+    background-color: #bc6cd9;
+}
+
+/*Pagina index*/
+/* 
 h1 {
     background-color: #000000;
     font-size: 25px;
@@ -8,6 +32,7 @@ h1 {
     font-family: cursive;
 
 }
+*/
 p{
     text-align: center;
     font-size: large;
@@ -17,7 +42,7 @@ p{
 ol li{
     font-size: 25px;
     color: blueviolet;
-    font-family: fantasy;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 ul li{
     max-width: 30%;
@@ -42,11 +67,5 @@ ul li{
     background-color: blueviolet;
     border-radius: 25px;
     color: #f0f0f0;
-    font-size: 20px;
-}
-.etiqueta{
-    border-radius: 5px;
-
-    background-color: aqua;
     font-size: 20px;
 }

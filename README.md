@@ -3,5 +3,5 @@ Nombre: Calvin Williams Condori Cocarito
 
 Materia: INF-122
 
-color favorito: #007AA2
+Color Favorito: #007AA2
   
