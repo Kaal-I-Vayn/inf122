@@ -100,3 +100,28 @@ console.log	(colores);
 var elemento=colores.pop();
 console.log	(elemento);
 console.log	(colores);
+
+var encontrado = colores.find(function (elemento){
+    return elemento === "rojo";
+});
+var elemento = colores.findIndex(function (elemento)
+{
+    return elemento === 1;
+});
+
+
+colores.findIndex(function(elemento)
+  {
+		elemento===true  
+	});
+
+console.log(encontrado);
+console.log(elemento);
+
+function saludar(nombre)
+{
+  return "hola, "+nombre+"!";
+}
+const mensaje = saludar("Calvin");
+
+console.log(mensaje)

@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repasando Conceptos</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            
+            font-size: 15px;
+        }
+        .boton{            
+            color: #ffff;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 15px;
+            background-color: rgb(39, 245, 39);
+            width: 120px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido al Mini Proyecto</h1>
+    <p>Este proyecto muestra la integracion de conceptos de HTML, CSS y JavaScript</p>
+    <h2>To Do List</h2>
+    <ul id="tarea-lista">  
+        <li>Aprende JS</li>      
+        <li>Aprende CSS</li>
+    </ul>
+    <input id="nueva-tarea" type="text" placeholder="Agregar nueva tarea">
+    <button onclick="agregarTarea()" id="" class="boton">Agregar Tarea</button>
+    <script>        
+        function agregarTarea()
+        {
+            var tarea = document.getElementById("nueva-tarea").value; //elemento al que quiero acceder
+            var nuevoItem = document.createElement("li");
+            nuevoItem.textContent=tarea;
+            document.getElementById("tarea-lista").appendChild(nuevoItem);
+            document.getElementById("nueva-tarea").value="";
+        };
+        
+    </script>
+</body>
+</html>
