@@ -1,0 +1,33 @@
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --purple: #6f2cff;
+    --light-purple:#EFE9F9;
+    --red-heart:#a50954;
+    --blue-heart:#acd9b2;
+    --sm:14px;
+    --md:20px;
+    --lg:60px:
+}
+body{
+    font-family: nunito;
+    margin: 0;
+}
+
+.title, .subtitle{
+    text-align: center;
+}
+.title{        
+    font-size: 65px;
+}
+.primary-button{
+    color: var(--white);
+    background-color: var(--purple);
+    width: 268px;
+    height: 61px;
+    flex-shrink: 0; 
+    border-radius: 5px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
+}

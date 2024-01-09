@@ -1,0 +1,16 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    
+    font-size: 15px;
+}
+.boton{            
+    color: #ffff;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 15px;
+    background-color: rgb(39, 245, 39);
+    width: 120px;
+    height: 40px;
+}
