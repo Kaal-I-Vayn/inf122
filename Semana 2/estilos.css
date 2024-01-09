@@ -16,18 +16,93 @@ body{
 
 .title, .subtitle{
     text-align: center;
-}
-.title{        
     font-size: 65px;
+    color: var(--black);
+    font-size: var(--md);
+    margin: 5px 0px 5px 0px;    
 }
+
 .primary-button{
+    display: flex;
+    align-items: start;
     color: var(--white);
     background-color: var(--purple);
-    width: 268px;
-    height: 61px;
-    flex-shrink: 0; 
-    border-radius: 5px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    
+    border: none;
+    padding: 10px 20px;
+    font-size: var(--md);
+    cursor: pointer;
+    margin: 100px 0px 100px 0px;
+    border-radius: 5px;   
 }
+.primary-button img{
+    margin-right: 10px;
+    align-self: center;
+}
+.brochure{
+    display: grid;    
+    width: 100%;    
+    grid-template-rows: auto 1fr auto;
+    justify-items: center;
+    background-color: var(--white);  
+
+}
+.more-info{
+    display: grid;
+    background-color: var(--light-purple);
+    width: 100%;    
+}
+.card-container{
+    display: flex; /*el grid se utiliza mas para matrices*/    
+    align-content: space-between;    
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 16px 0;
+}
+.icons-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); /*repite 2 veces 1 fraccion*/
+    margin: 50px 260px 50px 260px;
+    justify-content: center;
+}
+.card-icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 28px; /*mejor utilizar multimos de 4 ya que es algo definido*/
+}
+.card-icon figure img{
+    width: 50px;
+    height: 50px;
+}
+.icon-text h2{
+    font-size: var(--sm);
+    margin: 0;
+}
+.icon-text p{
+    font-size: var(--sm);
+    margin: 0;
+}
+
+@media (max-width: 720px){
+    .icons-container{
+        grid-template-columns: repeat(1,1fr);
+        margin: 50px 10px 50px 10px;
+    }
+    .brochure p{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
