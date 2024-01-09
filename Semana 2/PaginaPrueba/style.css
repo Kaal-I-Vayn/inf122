@@ -1,0 +1,55 @@
+:root{
+    --gray: #2B2E34;
+    --Primary: #0075FF;
+    --PrimaryLight: #00C2FF;    
+    --white: #FFFFFF;
+    --black: #000000; 
+    --cleargray: #AFC0E2; 
+    --yellow: #d1aE31;
+    --grayblue: #0d1423;
+
+
+}
+
+body{
+    background: var(--gray);
+    font-family: nunito;
+    margin: 0;
+}
+.title{
+    color: var(--white);
+}
+p{
+    color: var(--cleargray);
+}
+.company{
+    display: grid;    
+    width: 100%;    
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.more-info{
+    display: grid;    
+    width: 100%;    
+    justify-content: center;
+}
+.card-container{
+    background-color: var(--grayblue);
+    display: flex; /*el grid se utiliza mas para matrices*/                
+    border-radius: 8px;
+    width: 300px;
+    height: 160px;
+    flex-direction: column;    
+    margin: 27px;
+}
+.card-container{
+    text-align: center;    
+}
+.card-container figure img{        
+    
+}
+.icons-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);     
+}
+
