@@ -8,10 +8,9 @@
     --yellow: #d1aE31;
     --grayblue: #0d1423;
 
-
 }
 
-body{
+body{    
     background: var(--gray);
     font-family: nunito;
     margin: 0;
