@@ -26,6 +26,7 @@ p{
     display: grid;    
     width: 100%;    
     grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 48px;
     justify-items: center;
 }
 .more-info{
@@ -40,14 +41,12 @@ p{
     width: 300px;
     height: 160px;
     flex-direction: column;    
-    margin: 27px;
+    margin: 27px;    
 }
 .card-container{
     text-align: center;    
 }
-.card-container figure img{        
-    
-}
+
 .icons-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);     
