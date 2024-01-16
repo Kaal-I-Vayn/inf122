@@ -3,6 +3,7 @@ import './App.css';
 import './stylesheet/Evento.css'
 import Evento from './components/Evento';
 import EventoB from './components/EventoB';
+import EventoC from './components/EventoC';
 
 
 function App() {
@@ -50,6 +51,18 @@ function App() {
             Sala Audiovisual - Carrera de Informática - UMSA - Jueves 23 de Noviembre de 16:00 - 18:00
             Auditorio 4 - Universidad Católica Boliviana - Lunes 27 de Noviembre de 18:30 - 20:30"
       /> 
+      <EventoC title="MeetUp 11 - 3 Pitfalls de la Ingeniería de datos (donde no meter la pata)"
+        image="image5"
+        dateLiteral="25 de Noviembre de 2023"
+        placeLiteral="Online"
+        description={[
+          "¡Hola Pythonista!",
+          "Acompáñanos al MeetUp mensual de la comunidad Python La Paz",
+          "En este MeetUp tendremos la participación de Valery Calderon Briz, Ingeniera en Telecomunicaciones actualmente trabajando como Ingeniera de datos Senior en One.Five",
+          "Anteriormente Co-organizadora de Pyladies MX y Líder de la comunidad Python Guatemala",
+          "ha impartido conferencias y talleres en diversas PyCon en múltiples países.",
+        ]}
+      />
     </div>
   );
 }
