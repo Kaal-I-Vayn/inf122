@@ -1,17 +1,28 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
 import Nota from './Nota';
 
 function Lista(){
     const [notas,setNotas]=useState([]);
-    const addNota=()=>{
+    const [nuevaNota,setNuevaNota]=useState('');
+    
+    const addNota = () =>{
         console.log("Agregar Nota")
-        setNotas(notas,"Esto es otra nota")
+        if(nuevaNota.trim() === '') return(console.log("retorno por estar vacio"));
+        setNotas([...notas,{id:Date.now(), texto: nuevaNota}]);
+        setNuevaNota('');
     };
-    const onDelete = () =>{
+
+    const eliminarNota = (id) =>{
         console.log("Eliminar")
+        setNotas((prevNotas) => prevNotas.filter((nota) => nota.id !== id));
+
     };
-    const onEdit = () =>{
+    const editarNota = (id,nuevoTexto) =>{
         console.log("Editar")
+        setNotas((prevNotas) =>
+            prevNotas.map((nota)=>(nota.id === id ? { ...nota,texto:nuevoTexto}: nota))
+
+        );
     };
 
     return(
@@ -19,18 +30,20 @@ function Lista(){
                 <input
                     className="input"
                     type="text"
-                    value=""
-                >                    
-                </input>
-                <button onClick={addNota}>Agregar Nota</button>        
-                {notas.map((nota => (
+                    value={nuevaNota}
+                    onChange={(e)=>setNuevaNota(e.target.value)}                    
+                />                    
+                
+                <button className='boton' onClick={addNota}>Agregar Nota</button>
+                {notas.map((nota) => (
 
-                <Nota                    
-                    nota={nota}  
-                    onDelete={onDelete}
-                    onEdit={onEdit}
+                <Nota            
+                    key={nota.id}
+                    nota={nota}
+                    onDelete={eliminarNota}
+                    onEdit={editarNota}
                 />
-                )))
+                ))
 
                 }  
         </div>
