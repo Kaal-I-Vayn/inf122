@@ -1,0 +1,15 @@
+.galeria{
+    display: flex;
+    justify-content: center;
+    
+}
+.contenedor-image{
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
+}
+.contenedor-image img{
+    width: 120px;
+    height: 60px;
+}
