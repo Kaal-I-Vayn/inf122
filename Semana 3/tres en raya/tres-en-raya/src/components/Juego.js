@@ -32,9 +32,10 @@ function Juego() {
         }
     }
     const saltarA = (movimiento) => {
+        
         console.log("movimiento", movimiento);
         setNroMovimiento(movimiento);
-        setJugador(jugador === "X" ? "O" : "X");
+        setJugador(jugador === "X" ? "X" : "O");
 
     }
     const movimientoActual = historial[nroMovimiento];

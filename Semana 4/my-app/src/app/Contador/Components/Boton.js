@@ -1,9 +1,8 @@
 import React from "react";
-
-
+import style from './Boton.module.css'
 function Boton({ texto, esBotonClick, funcionClick}){
     return(
-        <button className={esBotonClick ? "boton-click" : "boton-reiniciar"} onClick={funcionClick}>
+        <button className={esBotonClick ? style["boton-click"] : style["boton-reiniciar"]} onClick={funcionClick}>
             {texto}
         </button>
     )
