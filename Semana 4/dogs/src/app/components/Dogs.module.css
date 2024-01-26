@@ -1,0 +1,11 @@
+.contenedor-image{
+    margin:10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-image img{
+    
+    border-radius: 20px;
+}
