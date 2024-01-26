@@ -11,9 +11,14 @@ export default function Foto(){
 
     
     useEffect(()=>{
-        fetch(url).then(res=>res.json()).then(data=>{setPerrito(data.sprites.front_default),setEstado(data.species.name)})   
+        fetch(url)
+        .then(res=>res.json())
+        .then(data=>{setPerrito(data.sprites.front_default)
+        ,setEstado(data.species.name)
+        ,setHabilidad(data.abilities[0].ability.name);
+    })   
     },[]);
-    setHabilidad(data.abilities[0].ability.name);
+    
     
     return(
         <div className={style["contenedor"]}>
